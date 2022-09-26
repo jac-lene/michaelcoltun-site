@@ -1,6 +1,7 @@
 ## Site Planning Wireframes
 
-This is a professional website for musician Michael Coltun. Below are Adobe Illustrator renderings of the site design.
+This is a professional website for musician Michael Coltun. Below are Adobe Illustrator renderings of the design. 
+The site is a 'one-page' scrollable layout, with integrated animation for the home page, Michael's name, and nav links. 
 
 ![Artboard 1](https://user-images.githubusercontent.com/97763546/192384662-04aaa03e-0188-4721-9c7e-b205fde8832f.png)
 
