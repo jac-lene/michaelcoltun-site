@@ -1,12 +1,17 @@
 import React from 'react'
 import './Header.css'
 
-function Nav() {
+function Nav(props) {
+
+  function getReference () {
+    props.scrollFunction(props.ref)
+  }
+
   return (
     <div className='fixed'>
         <nav>
       
-          <div className='mikey-container'>
+          <div className='mikey-container' onClick={getReference}>
           <div className='mikeyname'>Michael Coltun</div>
           </div>
 
