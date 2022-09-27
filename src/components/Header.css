@@ -1,11 +1,13 @@
 
 nav {
     position: fixed;
+    z-index: 999;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'HappyDay';
     letter-spacing: 1px;
     font-size: 1.5em;
+    background-color: #FFFDF6;
     /* REMOVE BORDER!!! */
     border-bottom: 1px dotted #fae59c;;
 }

@@ -1,0 +1,17 @@
+
+video {
+    width: 100vw;
+    position: relative;
+    top: -100px;
+    z-index: 0;
+}
+
+.mask {
+    width: 100vw;
+    height: 100px;
+    /* background-color: #FFFDF6; */
+    background-color: #e7c95f;
+    position: relative;
+    z-index: 999;
+    top: -200px;
+}

@@ -14,7 +14,7 @@ function Nav() {
 
 <div className='nav-left'>
     <div className='nav-spacer'></div>
-    <div className='fca'>film<span className='slash'>/</span>commercials<span className='slash'>/</span>ads</div>
+    <div className='fca'>film/commercials/ads</div>
     <div className='sw'>selected work</div>
     <div className='nav-spacer'></div>
 </div>

@@ -1,5 +1,6 @@
 body {
   background-color: #FFFDF6;
+  overflow-x: hidden;
 }
 
 .App {
