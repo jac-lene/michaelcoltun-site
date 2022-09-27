@@ -1,0 +1,44 @@
+
+nav {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'HappyDay';
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    /* REMOVE BORDER!!! */
+    border-bottom: 1px dotted #fae59c;;
+}
+
+.mikeyname {
+    position: absolute;
+    z-index: 999;
+    font-size: 1.5em;
+    margin-top: -5px;
+}
+
+.mikey-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+}
+
