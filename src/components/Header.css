@@ -1,21 +1,21 @@
 
 nav {
     position: fixed;
-    z-index: 999;
+    z-index: 99999;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'HappyDay';
     letter-spacing: 1px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     background-color: #FFFDF6;
     /* REMOVE BORDER!!! */
-    border-bottom: 1px dotted #fae59c;;
+    border-bottom: 1px dotted #fae59c;
 }
 
 .mikeyname {
     position: absolute;
     z-index: 999;
-    font-size: 1.5em;
+    font-size: 2rem;
     margin-top: -5px;
 }
 

@@ -1,0 +1,11 @@
+#fca {
+    /* border: 2px solid black; */
+    position: relative;
+    z-index: 9999;
+}
+
+.content {
+    border: 1px dotted black;
+    width: 80vw;
+    margin: 0 auto;
+}

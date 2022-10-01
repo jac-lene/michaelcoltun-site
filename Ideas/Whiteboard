@@ -1,0 +1,11 @@
+Responsivity
+    - when screen is smaller, get rid of nav links and just leave name
+
+Video play
+    - Figure out how to make muted or unmuted, maybe add a button that looks better 
+Video Randomizing
+    - make an array of objects with the src and the video credits so they can be accessed
+
+Header
+    - Fix spacing on right
+    - make name Centered

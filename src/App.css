@@ -1,18 +1,23 @@
 body {
   background-color: #FFFDF6;
   overflow-x: hidden;
+  font-family: 'HappyDay', Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 
 .App {
   text-align: center;
 }
 
-h1 {
-  font-family: 'HappyDay', Helvetica, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  letter-spacing: 1px;
-  }
+.subtitle {
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 65px;
+  font-family: 'HappyDay';
+  margin-bottom: 50px;
+}
 
 
 @font-face {

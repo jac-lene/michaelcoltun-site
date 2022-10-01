@@ -4,18 +4,23 @@ import Animation1 from '../animations/1.mp4'
 
 function Home() {
   return (
-    <div id='Home'>
+    <div id='home'>
         <video
   src={Animation1}
   controls
-  muted
-  autoPlay={"autoplay"}
+//   muted
+//   autoPlay={"autoplay"}
   preload="auto"
   loop
- > </video>
+ /> 
+
+
+{/* Idea: click to enter and it starts the video/makes it unmuted - not sure I want to get around the issue here but I'm tryin, maybe it turns music on using if clicked, then add or remove "muted" property on video */}
+    {/* <div className='entermodal'>
+      click to enter
+    </div> */}
 
     <div className='mask'></div>
-
     </div>
   )
 }
