@@ -1,10 +1,11 @@
 body {
   background-color: #FFFDF6;
   overflow-x: hidden;
-  font-family: 'HappyDay', Helvetica, sans-serif;
+  /* font-family: 'HappyDay', Helvetica, sans-serif; */
+  font-family: 'Olivier', Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
 
 .App {
@@ -12,10 +13,11 @@ body {
 }
 
 .subtitle {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-align: left;
   padding-left: 50px;
-  font-family: 'HappyDay';
+  /* font-family: 'HappyDay'; */
+  font-family: 'Olivier';
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -35,6 +37,14 @@ body {
   font-family: 'HappyDay';
   src: url('../happyday/happyday-regular-webfont.woff2') format('woff2'),
        url('../happyday/happyday-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Olivier';
+  src: url('../KTF-Oliver/KTF-Olivier.woff2') format('woff2'),
+       url('../KTF-Oliver/KTF-Olivier.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

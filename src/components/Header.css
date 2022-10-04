@@ -4,19 +4,25 @@ nav {
     z-index: 99999;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'HappyDay';
-    letter-spacing: 1px;
-    font-size: 1.75rem;
+    /* font-family: 'HappyDay'; */
+    /* font-family: 'Olivier'; */
+    padding-top: 15px; 
+    /* ^^^ This is for Olivier font only, remove if switching */
+    /* letter-spacing: 1px; */
+    font-size: 1.5rem;
     background-color: #FFFDF6;
     /* REMOVE BORDER!!! */
-    border-bottom: 1px dotted #fae59c;
+    /* border-bottom: 1px dotted #fae59c; */
 }
 
 .mikeyname {
     position: absolute;
     z-index: 999;
     font-size: 2rem;
-    margin-top: -5px;
+    /* margin-top: -5px; */
+    margin-top: -10px;
+    /* ^^^ Only if using Olivier for links */
+    font-family: 'HappyDay';
 }
 
 .mikey-container {
@@ -44,3 +50,13 @@ nav {
     gap: 50px;
 }
 
+
+@keyframes fadeout {
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+
+@keyframes fadein {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+  }
