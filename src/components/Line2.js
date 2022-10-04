@@ -3,7 +3,9 @@ import LineDiv from '../images/line2.png'
 
 function Line2(props) {
   return (
-    <div ref={props.live}><img src={LineDiv} className='line2'/></div>
+    <div><img src={LineDiv} className='line2'/>
+    <div ref={props.live}></div>
+    </div>
   )
 }
 
