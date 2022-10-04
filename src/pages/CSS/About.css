@@ -1,0 +1,10 @@
+.bio {
+    font-family: Helvetica;
+    width: 60vw;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.aboutspacer {
+    height: 100px;
+}

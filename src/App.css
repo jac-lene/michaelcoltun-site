@@ -12,11 +12,22 @@ body {
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-align: left;
-  padding-left: 65px;
+  padding-left: 50px;
   font-family: 'HappyDay';
   margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.line {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.line2 {
+  width: 80vw;
+  margin: 0 auto;
 }
 
 

@@ -132,7 +132,8 @@ function FilmCommAdd() {
             otherInfo: "",
         },
         {
-            src: "https://www.nytimes.com/video/t-magazine/100000006981365/make-t-something-erwin-wurm.html?smid=url-share",
+            embedCode: <iframe title="New York Times Video - Embed Player" width="480" height="321" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" id="nyt_video_player" src="https://www.nytimes.com/video/players/offsite/index.html?videoId=100000006981365"></iframe>,
+            src: "https://www.nytimes.com/video/players/offsite/index.html?videoId=100000006981365",
             title: "Make T Something",
             artist: "Erwin Wurm",
             publication: "New York Times",
@@ -161,6 +162,7 @@ function FilmCommAdd() {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
+                        volume="0"
                         title="Embedded Video"
                         />
                         <div>{content.title}</div>
@@ -176,7 +178,7 @@ function FilmCommAdd() {
 
         </div>
 
-        <div className='spacer'></div>
+        <div className='fcaspacer'></div>
     </div>
   )
 }
