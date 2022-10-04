@@ -11,8 +11,6 @@ nav {
     /* letter-spacing: 1px; */
     font-size: 1.5rem;
     background-color: #FFFDF6;
-    /* REMOVE BORDER!!! */
-    /* border-bottom: 1px dotted #fae59c; */
 }
 
 .mikeyname {
@@ -54,6 +52,9 @@ nav {
     cursor: pointer;
 }
 
+.noclick {
+    pointer-events: none !important;
+}
 
 @keyframes fadeout {
     0% { opacity: 1 }
