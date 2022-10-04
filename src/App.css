@@ -43,8 +43,8 @@ body {
 
 @font-face {
   font-family: 'Olivier';
-  src: url('../KTF-Oliver/KTF-Olivier.woff2') format('woff2'),
-       url('../KTF-Oliver/KTF-Olivier.woff') format('woff');
+  src: url('../Olivier/KTF-Olivier.woff2') format('woff2'),
+       url('../Olivier/KTF-Olivier.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
