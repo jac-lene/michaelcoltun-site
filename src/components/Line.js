@@ -1,9 +1,9 @@
 import React from 'react'
 import LineDiv from '../images/line.png'
 
-function Line() {
+function Line(props) {
   return (
-    <div><img src={LineDiv} className='line'/></div>
+    <div ref={props.select}><img src={LineDiv} className='line'/></div>
   )
 }
 

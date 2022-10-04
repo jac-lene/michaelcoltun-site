@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Live() {
+function Live(props) {
   return (
-    <div id='live'>
+    <div>
         <div className='subtitle'>live</div>
     
     

@@ -2,9 +2,9 @@ import React from 'react'
 import './CSS/Home.css'
 import Animation1 from '../animations/1.mp4'
 
-function Home() {
+function Home(props) {
   return (
-    <div id='home'>
+    <div ref={props.home}>
         <video
   src={Animation1}
   controls
@@ -20,7 +20,7 @@ function Home() {
       click to enter
     </div> */}
 
-    <div className='mask'></div>
+    <div className='mask' ref={props.fca}></div>
     </div>
   )
 }

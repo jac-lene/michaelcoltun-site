@@ -11,27 +11,36 @@ import Line2 from './components/Line2';
 import Line3 from './components/Line3';
 
 function App() {
-const homeRef = useRef(null)
+const home = useRef(null)
+const fca = useRef(null)
+const select = useRef(null)
+const live = useRef(null)
+const about = useRef(null)
+
 const [enter, setEnter] = useState(false)
 
 function clickToEnter () {
   setEnter(true)
 }
 
-const scrollFunction = (ref) => {
-  ref.current.scrollIntoView();
-}
+const handleScroll = (ref) => {
+  window.scrollTo({
+    top: ref.offsetTop,
+    left: 0,
+    behavior: "smooth",
+  });
+};
 
   return (
     <div className="App">
-      <header><Header scrollFunction={scrollFunction} home={homeRef}/></header>
-      <Home clickToEnter={clickToEnter} home={homeRef} />
+      <header><Header handleScroll={handleScroll} home={home} fca={fca} select={select} live={live} about={about}/></header>
+      <Home clickToEnter={clickToEnter} home={home} fca={fca} />
       <FilmCommAdd />
-      <Line />
+      <Line select={select} />
       <SelectedWork />
-      <Line2 />
+      <Line2 live={live}/>
       <Live />
-      <Line3 />
+      <Line3 about={about} />
       <About />
     </div>
   );

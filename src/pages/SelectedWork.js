@@ -3,7 +3,7 @@ import './CSS/Selected.css'
 
 function SelectedWork() {
   return (
-    <div id='selected'>
+    <div >
       <div className='workspacer'></div>
       <div className='subtitle'>selected work</div>
       

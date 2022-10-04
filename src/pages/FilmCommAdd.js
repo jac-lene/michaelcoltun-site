@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './CSS/FilmCommAdd.css'
 
-function FilmCommAdd() {
+function FilmCommAdd(props) {
     // https://player.vimeo.com/video/254712264?h=768a567cc3&color=e62517
     // ?h=475052af07&color=e62517"
 
