@@ -153,7 +153,7 @@ function FilmCommAdd() {
             { contentList.map((content) => {
                  {convertURL(content.src)}
                 return (
-                    <div className='contentCard'>
+                    <div key={content.id} className='contentCard' >
 
                         <iframe
                         width="400"
@@ -162,7 +162,6 @@ function FilmCommAdd() {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                        volume="0"
                         title="Embedded Video"
                         />
                         <div>{content.title}</div>
