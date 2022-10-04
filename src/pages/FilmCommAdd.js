@@ -46,6 +46,10 @@ function FilmCommAdd() {
             console.log(convertedURL)
             return (convertedURL)
         }
+        else {
+            convertedURL = x
+            return (convertedURL)
+        }
         // convertedURL = videoURL.replace('', '')
     }
 
@@ -59,30 +63,79 @@ function FilmCommAdd() {
 
     const contentList = [ 
         {
+            src: "https://youtu.be/Ktd9rvsOL5M",
+            title: "ZELDA Documentary",
+            artist: "Dir. Lauren Greenhall",
+            publication: "",
+            otherInfo: "",
+        },
+        {
+            src: "https://youtu.be/948UFQZ4ykI",
+            title: "Perfectly Good Moment",
+            artist: "Dir. Lauren Greenhall",
+            otherInfo: "",
+        },
+        {
+            src: "https://vimeo.com/426328439",
+            title: "HBO Max/Go/Now Explainer",
+            artist: "",
+            publication: "",
+            otherInfo: "",
+        },
+        {
             src: "https://vimeo.com/254712264",
-            title: "ZELDA Documentary",
-            artist: "Lauren Greenhall",
-            publication: "",
-            otherInfo: "",
-        },
-        {
-            src: "https://youtu.be/aPUVUrS2oC0",
-            title: "ZELDA Documentary",
-            artist: "",
-            otherInfo: "",
-        },
-        {
-            src: "https://vimeo.com/55825202",
-            title: "ZELDA Documentary",
-            artist: "Lauren Greenhall",
-            publication: "",
-            otherInfo: "",
-        },
-        {
-            src: "https://youtu.be/aPUVUrS2oC0",
-            title: "ZELDA Documentary",
+            title: "Form& Reel",
             artist: "",
             publication: "",
+            otherInfo: "",
+        },
+        {
+            src: "https://vimeo.com/143646220",
+            title: "Helia",
+            artist: "",
+            publication: "WORKPLAYWORK",
+            otherInfo: "",
+        },
+        {
+            src: "https://vimeo.com/153004773",
+            title: "Havas Digital Reel 2015",
+            artist: "",
+            publication: "WORKPLAYWORK",
+            otherInfo: "",
+        },
+        {
+            src: "https://vimeo.com/117402848",
+            title: "OK TENN Commercial",
+            artist: "",
+            publication: "",
+            otherInfo: "",
+        },
+        {
+            src: "https://vimeo.com/130467975",
+            title: "McCormick Gourmet",
+            artist: "",
+            publication: "",
+            otherInfo: "",
+        },
+        {
+            src: "https://youtu.be/0O_boW9YA7I",
+            title: "The Greatest Mathematician...",
+            artist: "",
+            publication: "TED-Ed",
+            otherInfo: "",
+        },
+        {
+            src: "https://youtu.be/c_g1BMVFcuw",
+            title: "How to Turn a Protest...",
+            artist: "Eric Liu",
+            publication: "TED-Ed",
+            otherInfo: "",
+        },
+        {
+            src: "https://www.nytimes.com/video/t-magazine/100000006981365/make-t-something-erwin-wurm.html?smid=url-share",
+            title: "Make T Something",
+            artist: "Erwin Wurm",
+            publication: "New York Times",
             otherInfo: "",
         },
       
@@ -108,10 +161,12 @@ function FilmCommAdd() {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                        title="Embedded video"
+                        title="Embedded Video"
                         />
                         <div>{content.title}</div>
                         <div>{content.artist}</div>
+                        <div>{content.publication}</div>
+                        <div>{content.otherInfo}</div>
 
                     </div>
                 )
@@ -121,7 +176,7 @@ function FilmCommAdd() {
 
         </div>
 
-
+        <div className='spacer'></div>
     </div>
   )
 }
