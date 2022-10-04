@@ -24,7 +24,7 @@ function Nav(props) {
     <div>
         <nav className='navbar' id='navbar'>
       
-          <div className='mikey-container' onClick={() => {props.handleScroll(props.home.current)}}>
+          <div className='mikey-container link' onClick={() => {props.handleScroll(props.home.current)}}>
           <div className='mikeyname'>Michael Coltun</div>
           </div>
 
@@ -32,8 +32,8 @@ function Nav(props) {
 
 <div className='nav-left'>
     <div className='nav-spacer'></div>
-    <div className='fca' onClick={() => {props.handleScroll(props.fca.current)}}>film/commercials/ads</div>
-    <div className='sw' onClick={() => {props.handleScroll(props.select.current)}}>selected work</div>
+    <div className='fca link' onClick={() => {props.handleScroll(props.fca.current)}}>film/commercials/ads</div>
+    <div className='sw link' onClick={() => {props.handleScroll(props.select.current)}}>selected work</div>
     <div className='nav-spacer'></div>
 </div>
 
@@ -41,8 +41,8 @@ function Nav(props) {
 
 <div className='nav-right'>
     <div className='nav-spacer'></div>
-    <div className='live' onClick={() => {props.handleScroll(props.live.current)}}>live shows</div>
-    <div className='about' onClick={() => {props.handleScroll(props.about.current)}}>about</div>
+    <div className='live link' onClick={() => {props.handleScroll(props.live.current)}}>live shows</div>
+    <div className='about link' onClick={() => {props.handleScroll(props.about.current)}}>about</div>
     <div className='nav-spacer'></div>
 </div>
 

@@ -50,6 +50,10 @@ nav {
     gap: 50px;
 }
 
+.link {
+    cursor: pointer;
+}
+
 
 @keyframes fadeout {
     0% { opacity: 1 }
