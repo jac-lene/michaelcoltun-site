@@ -12,54 +12,43 @@ function FilmCommAdd(props) {
 
     function convertURL (x) {
         if (x.match(/vimeo/)) {
-            console.log("it's vimeo")
             const a = x.split("//")
-            console.log(a)
+            // console.log(a)
             a.splice(1, 0, '//player.')
-            console.log(a)
+            // console.log(a)
             const b = a[2].split('/')
-            console.log(b)
+            // console.log(b)
             a.pop()
-            console.log(a)
+            // console.log(a)
             b.splice(1,0, "/video/")
-            console.log(b)
+            // console.log(b)
             const c = b.join('')
             const d = a.join('')
-            console.log(d, c)
+            // console.log(d, c)
             convertedURL = d.concat(c)
-            console.log(convertedURL)
+            // console.log(convertedURL)
             return (convertedURL)
         }
         else if (x.match(/you/)) {
-            console.log("it's youtube")
             const a = x.split('.')
-            console.log(a)
+            // console.log(a)
             const b = a[1].split('/')
             a.pop()
-            console.log(a)
-            console.log(b)
+            // console.log(a)
+            // console.log(b)
             b.splice(1,0,'.com/embed/')
-            console.log(b)
+            // console.log(b)
             const c = a.join('')
             const d = b.join('')
             convertedURL = c.concat(d)
-            console.log(convertedURL)
+            // console.log(convertedURL)
             return (convertedURL)
         }
         else {
             convertedURL = x
             return (convertedURL)
         }
-        // convertedURL = videoURL.replace('', '')
     }
-
-    // console.log(convertedURL)
-
-    // useEffect(() => {
-    //     convertURL(videoURL)
-    // }, []
-    // )
-    
 
     const contentList = [ 
         {
