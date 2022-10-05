@@ -5,7 +5,7 @@ body {
   font-family: 'Olivier', Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  /* letter-spacing: 1px; */
+  letter-spacing: 1px;
 }
 
 .App {
