@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './CSS/Home.css'
 import Animation1 from '../animations/1.mp4'
-import Animation2 from '../animations/2.mp4'
-import Animation3 from '../animations/3.mp4'
+// import Animation2 from '../animations/2.mp4'
+// import Animation3 from '../animations/3.mp4'
 // import Animation4 from '../animations/4.mp4'
 // import Animation5 from '../animations/5.mp4'
 // import Animation6 from '../animations/6.mp4'
@@ -18,14 +18,14 @@ function Home(props) {
       src: Animation1,
       credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Jim Schroeder",
     },
-    {
-      src: Animation2,
-      credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Cem Misirlioglu",
-    },
-    {
-      src: Animation3,
-      credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Cem Misirlioglu",
-    },
+    // {
+    //   src: Animation2,
+    //   credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Cem Misirlioglu",
+    // },
+    // {
+    //   src: Animation3,
+    //   credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Cem Misirlioglu",
+    // },
     // {
     //   src: Animation4,
     //   credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Souleymane Ibrahim",
