@@ -139,10 +139,10 @@ function FilmCommAdd(props) {
 
         <div className='content'>
                
-            { contentList.map((content) => {
+            { contentList.map((content, i) => {
                  {convertURL(content.src)}
                 return (
-                    <div key={content.id} className='contentCard' >
+                    <div key={i} className='contentCard' >
 
                         <iframe
                         width="400"

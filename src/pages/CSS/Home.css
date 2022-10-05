@@ -28,3 +28,14 @@ video {
     transform: translate(-50%, -50%);
     font-size: 2rem;
 }
+
+.animcred {
+    position: relative;
+    z-index: 9999;
+    bottom: 210px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 50px;
+    letter-spacing: 2px;
+}
