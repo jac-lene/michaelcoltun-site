@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './CSS/Home.css'
-// import Animation1 from '../animations/1.mp4'
+import Animation1 from '../animations/1.mp4'
 // import Animation2 from '../animations/2.mp4'
 // import Animation3 from '../animations/3.mp4'
 // import Animation4 from '../animations/4.mp4'
@@ -14,10 +14,10 @@ import './CSS/Home.css'
 
 function Home(props) {
   const animations = [
-    // {
-    //   src: Animation1,
-    //   credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Jim Schroeder",
-    // },
+    {
+      src: Animation1,
+      credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Jim Schroeder",
+    },
     // {
     //   src: Animation2,
     //   credits: "Animation by Mert Öztekin, Music by Mikey Coltun with Cem Misirlioglu",
@@ -60,26 +60,26 @@ function Home(props) {
     // },
 
   ]
-  // const [rndmAnimSrc, setRndmAnimSrc] = useState(animations[0].src) 
-  // const [rndmAnimCred, setRndmAnimCred] = useState(animations[0].credits)
+  const [rndmAnimSrc, setRndmAnimSrc] = useState(animations[0].src) 
+  const [rndmAnimCred, setRndmAnimCred] = useState(animations[0].credits)
 
-  // function newAnim () {
-  //   const randomIdx = Math.floor(Math.random() * (animations.length))
-  //   console.log(randomIdx)
-  //   setRndmAnimSrc(animations[randomIdx].src)
-  //   setRndmAnimCred(animations[randomIdx].credits)
+  function newAnim () {
+    const randomIdx = Math.floor(Math.random() * (animations.length))
+    console.log(randomIdx)
+    setRndmAnimSrc(animations[randomIdx].src)
+    setRndmAnimCred(animations[randomIdx].credits)
     
-  // }
+  }
 
-// useEffect(() => {
-// newAnim()
-// }, [])
+useEffect(() => {
+newAnim()
+}, [])
 
-// console.log(rndmAnimSrc, rndmAnimCred)
+console.log(rndmAnimSrc, rndmAnimCred)
 
   return (
     <div ref={props.home}>
-        {/* <video
+        <video
   src={rndmAnimSrc}
   controls
 //   muted
@@ -87,7 +87,7 @@ function Home(props) {
   preload="auto"
   loop
  /> 
- <div className='animcred'>{rndmAnimCred}</div> */}
+ <div className='animcred'>{rndmAnimCred}</div>
 
 
 {/* Idea: click to enter and it starts the video/makes it unmuted - not sure I want to get around the issue here but I'm tryin, maybe it turns music on using if clicked, then add or remove "muted" property on video */}

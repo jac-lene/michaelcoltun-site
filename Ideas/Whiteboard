@@ -8,8 +8,6 @@ Responsivity
 
 Video play
     - Figure out how to make muted or unmuted, maybe add a button that looks better 
-Video Randomizing
-    - make an array of objects with the src and the video credits so they can be accessed
 
 FCA
     - Why is NYT video like that >:(

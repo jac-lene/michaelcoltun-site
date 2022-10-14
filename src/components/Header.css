@@ -16,11 +16,12 @@ nav {
 .mikeyname {
     position: absolute;
     z-index: 999;
-    font-size: 2rem;
+    font-size: 3rem;
     /* margin-top: -5px; */
     margin-top: -10px;
     /* ^^^ Only if using Olivier for links */
     font-family: 'Olivier';
+    color: rgb(16, 111, 166);
 }
 
 .mikey-container {
