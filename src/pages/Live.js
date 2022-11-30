@@ -9,21 +9,24 @@ function Live(props) {
       date: "October 30th, 2022",
       location: "Brooklyn, NY",
       venue: "Brooklyn Steel",
-      group: "Mdou Moctar"
+      group: "Mdou Moctar",
+      link: "https://www.bowerypresents.com/venues/brooklyn-steel",
     },
     {
       upcoming: true,
       date: "October 31st, 2022",
       location: "Providence, RI",
       venue: "AS220",
-      group: "Mdou Moctar"
+      group: "Mdou Moctar",
+      link: "https://as220.org/",
     },
     {
       upcoming: false,
       date: "September 10th, 2022",
       location: "London, UK",
       venue: "Cafe Oto",
-      group: "Janka Nabay"
+      group: "Janka Nabay",
+      link: "https://www.cafeoto.co.uk/",
     },
   ]
 
@@ -38,7 +41,7 @@ function Live(props) {
         {showList.map((show) => {
           if (show.upcoming === true) {
             return (
-            <p>{show.date} : {show.location} @ {show.venue} w/ {show.group}</p>)
+            <p>{show.date} : {show.location} @ <a href={show.link}>{show.venue} w/ {show.group}</a></p>)
           } 
           return null
         })}
@@ -50,7 +53,7 @@ function Live(props) {
         {showList.map((show) => {
           if (show.upcoming === false) {
             return (
-            <p>{show.date} : {show.location} @ {show.venue} w/ {show.group}</p>)
+            <p>{show.date} : {show.location} @ <a href={show.link}>{show.venue} w/ {show.group}</a></p>)
           } 
           return null
         })}
