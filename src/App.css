@@ -32,6 +32,11 @@ body {
   margin: 0 auto;
 }
 
+.shortline {
+  width: 20vw;
+  margin: 0 auto;
+}
+
 
 /* @font-face {
   font-family: 'HappyDay';

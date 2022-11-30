@@ -11,5 +11,9 @@
 
 .subsubtitle {
     font-size: 1.4rem;
+    /* color: rgb(7, 49, 74); */
+}
+
+a {
     color: rgb(12, 77, 115);
 }

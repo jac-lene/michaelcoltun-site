@@ -1,5 +1,6 @@
 import React from 'react'
 import './CSS/Live.css'
+import Shortline from '../components/Shortline'
 
 function Live(props) {
 
@@ -46,7 +47,12 @@ function Live(props) {
           return null
         })}
         </div>
-       
+
+        {/* <div className='spacer'></div>
+        <Shortline/>
+        <div className='spacer'></div> */}
+        
+        <div className='spacer'></div>
 
         <div className='subsubtitle'>PAST</div>
         <div className='dates'>
