@@ -1,3 +1,15 @@
 .spacer {
     height: 20px;
 }
+
+.dates {
+    font-family: Helvetica;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subsubtitle {
+    font-size: 1.4rem;
+    color: rgb(12, 77, 115);
+}

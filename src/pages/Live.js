@@ -32,8 +32,9 @@ function Live(props) {
   return (
     <div>
         <div className='subtitle'>live</div>
-        <div className='spacer'></div>
-        <h3>UPCOMING</h3>
+        {/* <div className='spacer'></div> */}
+        <div className='subsubtitle'>UPCOMING</div>
+        <div className='dates'>
         {showList.map((show) => {
           if (show.upcoming === true) {
             return (
@@ -41,18 +42,23 @@ function Live(props) {
           } 
           return null
         })}
+        </div>
+       
 
-        <h3>PAST</h3>
-
-         {showList.map((show) => {
+        <div className='subsubtitle'>PAST</div>
+        <div className='dates'>
+        {showList.map((show) => {
           if (show.upcoming === false) {
             return (
             <p>{show.date} : {show.location} @ {show.venue} w/ {show.group}</p>)
           } 
           return null
         })}
+        </div>
+        
     
 
+        <div className='spacer'></div>
         <div className='spacer'></div>
     </div>
   )
