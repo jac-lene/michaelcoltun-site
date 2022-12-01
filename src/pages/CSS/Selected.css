@@ -8,3 +8,19 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.desc {
+    font-style: italic;
+}
+
+.album {
+    font-size: .75rem;
+}
+
+.albumflex {
+    width: 80vw;
+    display: flex;
+    direction: row;
+    align-items: center;
+    justify-content: center;
+}

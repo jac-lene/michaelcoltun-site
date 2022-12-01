@@ -9,7 +9,7 @@ function SelectedWork() {
     {
         id: 1,
         artistName: "Mdou Moctar",
-        description: "TKTKTK",
+        description: "",
     },
     {
         id: 2,
@@ -79,14 +79,22 @@ function SelectedWork() {
           <>
         <div className='subsubtitle'>{artist.artistName}</div>
         <div className='spacer'></div>
-        <div className='text'>{artist.description}</div>
+        {artist.description && <div className='text'>{artist.description}
         <div className='spacer'></div>
+        </div>}
+        
 
         {albumList.map((album) => {
           return(
             <>
-            {artist.id === album.linkedID &&
+            {artist.id === album.linkedID && 
+            <>
+            <div className='albumflex'>
             <div className='text'>{album.albumName}</div>
+            <div className='text desc album'>{album.description}</div>
+            </div>
+            <div className='spacer'></div>
+            </>
             }
             
             </>
