@@ -1,3 +1,10 @@
 .workspacer {
     /* height: 50px; */
 }
+
+.text {
+    font-family: Helvetica;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}

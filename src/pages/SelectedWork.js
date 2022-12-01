@@ -1,5 +1,6 @@
 import React from 'react'
 import './CSS/Selected.css'
+import Shortline from '../components/Shortline'
 
 function SelectedWork() {
 
@@ -73,6 +74,30 @@ function SelectedWork() {
     <div >
       <div className='workspacer'></div>
       <div className='subtitle'>selected work</div>
+      {artistList.map((artist) => {
+        return(
+          <>
+        <div className='subsubtitle'>{artist.artistName}</div>
+        <div className='spacer'></div>
+        <div className='text'>{artist.description}</div>
+        <div className='spacer'></div>
+
+        {albumList.map((album) => {
+          return(
+            <>
+            {artist.id === album.linkedID &&
+            <div className='text'>{album.albumName}</div>
+            }
+            
+            </>
+          )
+        })}
+         <div className='spacer'></div>
+         <Shortline/>
+         <div className='spacer'></div>
+        </>
+        )
+      })}
       
       
       
