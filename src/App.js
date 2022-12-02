@@ -34,10 +34,10 @@ const handleScroll = (ref) => {
   return (
     <div className="App">
       <header><Header handleScroll={handleScroll} home={home} fca={fca} select={select} live={live} about={about}/></header>
-      <Home clickToEnter={clickToEnter} home={home} fca={fca} />
-      <FilmCommAdd />
-      <Line select={select} />
+      <Home clickToEnter={clickToEnter} home={home} select={select}/>
       <SelectedWork />
+      <Line fca={fca} />
+      <FilmCommAdd />
       <Line2 live={live}/>
       <Live />
       <Line3 about={about} />

@@ -52,6 +52,7 @@ function SelectedWork() {
       src: "https://www.tzadik.com/index.php?catalog=7812",
       albumInfo: "2015 Tzadik",
       description: "'Together since 2010, Les Rhinocéros has brought their manic and zany mixture of heavy metal riffs, world music, noise, math rock, klezmer, reggae, minimalism, soundtracks and sick improvisation to appreciative audiences all over the world. Their long awaited third release ups the ante once again with a wide variety of manic compositions performed tighter than ever by this virtuosic trio. Featuring guests Gal Klein, Joe Herrera, Matt Rippetoe, Kamyar Arsani, Reese Higgins and David Coltun this is a passionate young band breaking new ground in instrumental music!' - John Zorn",
+      img: "https://f4.bcbits.com/img/a2492922622_16.jpg",
       linkedID: 2,
     },
     {
@@ -59,6 +60,7 @@ function SelectedWork() {
       src: "https://www.tzadik.com/index.php?catalog=7808",
       albumInfo: "2013 Tzadik",
       description: "'For their second CD for Tzadik, this fabulous trio takes a step toward tradition with a heavy CD of music for the classic format of guitar, bass and drums. Recorded at Bill Laswell’s Orange Studio by James Dellatacoma, the sound is as intense and powerful as the music. Les Rhinocéros II is a strong second release by this tight and razor sharp new band of musical renegades.' - John Zorn",
+      img: "https://f4.bcbits.com/img/a3214444827_16.jpg",
       linkedID: 2,
     },
     {
@@ -66,12 +68,13 @@ function SelectedWork() {
       src: "https://www.tzadik.com/index.php?catalog=7801",
       albumInfo: "2011 Tzadik",
       description: "'Hailing from the Washington, DC area, the young band Les Rhinocéros delivers a crazy world in sound, blending aspects of rock, world music, noise, ambient and jazz. The trio of teenagers was formed in 2008 while the players were still in high school, and has developed since then into an intense and wildly imaginative group that takes music to its extremes. Emotional, minimalistic, intense and grooving, this is music that goes beyond imagination to the edges of sanity. The group continues their sonic experiments by adding unusual instruments into the traditional rock band setting.' - John Zorn",
+      img: "https://f4.bcbits.com/img/a0005964661_16.jpg",
       linkedID: 2,
     },
   ]
 
   return (
-    <div >
+    <div id='select'>
       <div className='workspacer'></div>
       <div className='subtitle'>selected work</div>
       {artistList.map((artist) => {
@@ -83,23 +86,33 @@ function SelectedWork() {
         <div className='spacer'></div>
         </div>}
         
-
+        <div className='cardflex'>
         {albumList.map((album) => {
           return(
             <>
             {artist.id === album.linkedID && 
             <>
+            
             <div className='albumflex'>
-            <div className='text'>{album.albumName}</div>
-            <div className='text desc album'>{album.description}</div>
+            <div className='imgflex'>
+              <img src={album.img} className='albumimg'/>
+              <div className='albumname'>{album.albumName}</div>
             </div>
+            </div>
+            
             <div className='spacer'></div>
+
+            {/* <div className='text desc album'>{album.description}</div> */}
+            
             </>
+            
             }
             
             </>
           )
         })}
+        </div>
+       
          <div className='spacer'></div>
          <Shortline/>
          <div className='spacer'></div>
