@@ -36,6 +36,9 @@ const handleScroll = (ref) => {
       <header><Header handleScroll={handleScroll} home={home} fca={fca} select={select} live={live} about={about}/></header>
       <Home clickToEnter={clickToEnter} home={home} select={select}/>
       <SelectedWork />
+      <div className='spacer'></div>
+      <div className='spacer'></div>
+      <div className='spacer'></div>
       <Line fca={fca} />
       <FilmCommAdd />
       <Line2 live={live}/>

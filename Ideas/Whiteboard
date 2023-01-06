@@ -1,7 +1,7 @@
 Overall
     - Add Back To Top button
     - need about photo
-    - need other content
+    - animations hosted on backend, api calls for the randomization
 
 Responsivity
     - when screen is smaller, get rid of nav links and just leave name
@@ -12,3 +12,5 @@ Video play
 FCA
     - Why is NYT video like that >:(
 
+Selected works
+    - on hover show review, probably need a state change

@@ -94,7 +94,8 @@ function SelectedWork() {
             <>
             
             <div className='albumflex'>
-            <div className='imgflex'>
+            <div className='imgflex'>    
+              <p className='descText'>{album.description}</p>
               <img src={album.img} className='albumimg'/>
               <div className='albumname'>{album.albumName}</div>
             </div>
@@ -114,8 +115,11 @@ function SelectedWork() {
         </div>
        
          <div className='spacer'></div>
+         <div className='spacer'></div>
          <Shortline/>
          <div className='spacer'></div>
+         <div className='spacer'></div>
+         
         </>
         )
       })}
