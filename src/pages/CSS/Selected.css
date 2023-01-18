@@ -56,11 +56,10 @@
     font-size: .8rem;
     position: absolute;
     width: 25vw;
-    opacity: 1 !important;
 }
 
-.imgflex:hover { 
-    opacity: .35;
+.albumimg:hover { 
+    opacity: .2;
 }
 
 .albumimg {

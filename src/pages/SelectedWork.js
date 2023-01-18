@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './CSS/Selected.css'
 import Shortline from '../components/Shortline'
 
 function SelectedWork() {
+
+  const [hover, setHover] = useState(false)
+  const [albumHover, setAlbumHover] = useState("")
 
 
   const artistList = [ 
@@ -94,9 +97,9 @@ function SelectedWork() {
             <>
             
             <div className='albumflex'>
-            <div className='imgflex'>    
-              <p className='descText'>{album.description}</p>
-              <img src={album.img} className='albumimg'/>
+            <div className='imgflex' >    
+             {hover && albumHover === album.albumName ? <p className='descText'>{album.description}</p> :  null}
+              <img src={album.img} className='albumimg' onMouseOver={() => {setHover(true); setAlbumHover(album.albumName)}} onMouseOut={() => setHover(false)} />
               <div className='albumname'>{album.albumName}</div>
             </div>
             </div>
