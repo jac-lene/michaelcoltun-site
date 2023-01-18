@@ -2,7 +2,6 @@
 nav {
     position: fixed;
     z-index: 99999;
-    padding-top: 10px;
     padding-bottom: 10px;
     /* font-family: 'HappyDay'; */
     /* font-family: 'Olivier'; */
@@ -24,9 +23,36 @@ nav {
     color: rgb(16, 111, 166);
 }
 
+.mikeynameSmall {
+    position: absolute;
+    z-index: 999;
+    font-size: 3rem;
+    /* margin-top: -5px; */
+    margin-top: -20px;
+    /* ^^^ Only if using Olivier for links */
+    font-family: 'Olivier';
+    color: rgb(16, 111, 166);
+}
+.mikeynameSmaller {
+    /* position: absolute; */
+    /* z-index: 999; */
+    font-size: 3rem;
+    /* margin-top: -5px; */
+    margin-top: -10px;
+    /* ^^^ Only if using Olivier for links */
+    font-family: 'Olivier';
+    color: rgb(16, 111, 166);
+}
+
 .mikey-container {
     display: flex;
     justify-content: center;
+}
+
+.dropdown{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px
 }
 
 .nav {
@@ -53,9 +79,20 @@ nav {
     cursor: pointer;
 }
 
+.link:hover {
+    opacity: .75
+}
+
 .noclick {
     pointer-events: none !important;
 }
+
+@media (max-width: 1100px) {
+    .navScreen {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+  }
 
 @keyframes fadeout {
     0% { opacity: 1 }
@@ -66,3 +103,5 @@ nav {
     0% { opacity: 0 }
     100% { opacity: 1 }
   }
+
+

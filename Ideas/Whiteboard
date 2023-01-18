@@ -1,8 +1,8 @@
-Overall
-    - need about photo ??
-
 Responsivity
-    - when screen is smaller, get rid of nav links and just leave name
+    - mobile
+    - fade transitions
+    - fix smallest web size nav bar
+    - albums small
 
 Video play
     - Figure out how to make muted or unmuted, maybe add a button that looks better 
@@ -11,4 +11,4 @@ FCA
     - Why is NYT video like that >:(
 
 Selected works
-    - on hover show review, probably need a state change
+    - fade animation for opacity change
